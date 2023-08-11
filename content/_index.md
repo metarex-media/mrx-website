@@ -59,7 +59,7 @@ metadata.
   <div class="extra content">
     <a>
       <i class="user icon"></i>
-      22 Friends
+      16 Backers and rising
     </a>
   </div>
 </div>
