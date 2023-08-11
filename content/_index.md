@@ -69,6 +69,12 @@ metadata.
 {{< /f/row                                                                   >}}
 
 <!-- ###  Row boundary ##################################################### -->
+<!--  Introduction --------------------------------------------------------  -->
+
+<div class="ui padded olive segment">
+{{<   include    "content/docs/Project/introduction.md" >}}
+</div>
+
 <!--  Backer List ---------------------------------------------------------  -->
 
 <div class="ui padded olive segment">
