@@ -15,6 +15,7 @@ clogrc/
 # ignore the tmp folder but not the readme inside it
 tmp/*
 !tmp/readme.md
+
 #ignore mac artifacts
 .DS_Store
 
