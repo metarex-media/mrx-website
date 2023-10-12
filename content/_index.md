@@ -11,7 +11,7 @@ linkTitle: Metarex
 {{< f/card-video
       src         =  "https://metarex.media/rnf/sources/rnf-sizzle.mp4"
       poster      =  "/img/event/ibc2023-poster-rnf-sizzle.png"
-      header      =  "IBC Accelerator Zone 2023"
+      header      =  "IBC Accelerator 2023 - Responsive Narrative Factory"
       extra       =  "IBC Hall 3 Friday at 14:00"
       id          =  "splash"
       class       = "ui olive card"
@@ -19,9 +19,12 @@ linkTitle: Metarex
       controls  = true
  >}}
 
-{{% metarex %}} is at IBC in Hall 3 on the Responsive Narrative Factory Pod.
+{{% metarex %}} showed a hugely successful demo of Hyper-personalization with
+our partners.
 
-<div class="ui red message"><div class="header">
+{{% f/message
+    class="ui red message"
+   header=`
   <a href="https://www.bbc.co.uk/programmes/p0f8xhj4" target="_blank">BBC</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="/"                                                        >MetaRex</a>
@@ -32,96 +35,83 @@ linkTitle: Metarex
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="https://www.ezdrm.com"                     target="_blank">EZDRM</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/bergerjoshua"  target="_blank">JPBMedia</a>
-</div></div>
-<div class="ui orange message">
+  <a href="https://www.linkedin.com/in/bergerjoshua"  target="_blank">JPBMedia</a>`
+%}}
+
+{{% f/message
+    class="ui orange message"
+   description=`
   <a href="https://metarex.media/meet"                       >Book a meeting</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="/docs/specifications/"                            >Read the Specs</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="https://github.com/metarex-media/"   target="_blank">See the Code</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://ibcdemo.cuvo.io/"            target="_blank">See the Demo</a>
-</div>
-<div class="ui green message">
+  <a href="https://ibcdemo.cuvo.io/"            target="_blank">See the Demo</a>`
+%}}
+
+{{% f/message
+    class="ui green message"
+   description=`
   <p><strong>Personalized Streaming Video</strong> - you're in charge of the viewing</p>
-  <p><strong>Metadata driven Video</strong> - you're in control of the creation</p>
-</div>
+  <p><strong>Metadata driven Video</strong> - you're in control of the creation</p>`
+%}}
 
 {{< /f/card-video >}}
 
 <!-- --- card -------------------------------------------------------------  -->
 
 {{< f/card-video
-      src         =  "/img/event/ibc2023-free-stuff.mp4"
-      poster      =  "/img/event/ibc2023-merch/poster-phone-holder.png"
-      header      =  "(RNF) - IBC Accelerator - Hall 3"
-      extra       =  "IBC Hall 3 Friday at 14:00"
-      id          =  "free-stuff"
-      class       =  "ui red card"
-      autoplay  = true
-      controls  = true
- >}}
-
-{{% metarex %}} is also at IBC to have a bit of fun.
-
-<div class="ui red message"><div class="header">FREE GIVE AWAY - at 13:30 EVERY DAY!</div></div>
-<div class="ui orange message">Ask for dino stickers - we have 25/day to give away.</div>
-<div class="ui green message">
-  <p><strong>FREE</strong> Metadata Counselling</p>
-  <p>Bring us your <strong>metadata problems</strong> and see how we can help.</p>
-</div>
-
-{{< /f/card-video >}}
-
-{{< /f/row                                                                   >}}
-{{< /f/cards                                                                  >}}
-
-<!-- ###  Row boundary ##################################################### -->
-
-{{< f/row                                                                    >}}
-{{< f/cards class = "ui two stackable cards"                            >}}
-
-<!-- --- card -------------------------------------------------------------  -->
-
-{{< f/card
       src =  "/meeja/mrx-rexy-nab-2023.mp4"
       credit   =  ""
       title    =  "MetaRex - it's like FedEx for Metadata"
       extra    =  "this video will be available as a test pattern soon!"
       id       =  "splash"
+      header   =  "MetaRex - free Open Source software (**FOSS**) for media metadata"
  >}}
 
-{{% metarex %}} will create free Open Source software (**FOSS**) to handle media
-metadata.
+[Backers](/docs/project/backers) put money in a pot. The pot funds the
+**[FOSS](https://github.com/metarex.media)**.
 
-* [Backers](/docs/project/backers) put money in a pot
-* The pot is used to fund the **FOSS**
-* Everyone gets to build rich metadata driven applications that work seamlessly
-  together with No-Code interoperability built in.
-* On Set Virtualisation, QC cascading, Localisation, AI driven MAMs - it's all
-  in scope
-* Set the metadata free with [Metarex](/contact)
-* [Read More](/docs/technology/) about the technology and [become a
-  backer](/docs/project/backers/)
-* [Sign up](/contact) to our newsletter if you want test files, spec updates or
-  just want to see how Rexy evolves once the sun-tan is done.
-* [Download](/downloads/samples/rexy_sunbathe_mrx.zip) a sample metarex file for
-  Rexy's sunbathing scene. It has some issues that are being worked on. The
-  [registration information](/ui/reg/MRX.123.456.789.def) is in the register and
-  the [high level documentation](ui/reg/) in online.
+{{% f/message
+    class="ui red message"
+   header=`Software Media Metadata Framework on
+    <a href="https://github.com/metarex-media">GitHub</a>`
+%}}
 
-{{< /f/card >}}
+{{% f/message
+         class="ui orange message"
+   description="Contact us (top of the page) to become a backer"
+%}}
 
-<!-- --- card -------------------------------------------------------------  -->
+{{% f/message
+         class="ui green message"
+   description=`<p>
+    <a href="/docs/specifications/"><strong>Read the spces</strong></a> or
+    <a href="/downloads/"><strong>Download samples</strong></a> of Rexy, our mascot.
+  </p>
+  <p>
+    Try the <a href="/ui/reg/"><strong>register to see how it works</strong></a> or
+    <a href="https://ibcdemo.cuvo.io"><strong>try our IBC demo</strong></a>.
+  </p>`
+%}}
 
-{{< f/card-blog >}}
+{{< /f/card-video >}}
+
+{{< /f/row                                                                   >}}
+{{< /f/cards                                                                  >}}
+<!-- ###  Row boundary ##################################################### -->
+{{< f/row                                                                    >}}
+{{< f/cards class = "ui two stackable cards"                            >}}
+
+<!-- --- cards show the latest N blogs-------------------------------------  -->
+
+{{< f/card-blog 2 >}}
 
 <!-- --- card -------------------------------------------------------------  -->
 
 {{< /f/cards                                                                 >}}
 {{< /f/row                                                                   >}}
-
 <!-- ###  Row boundary ##################################################### -->
 <!--  Introduction --------------------------------------------------------  -->
 

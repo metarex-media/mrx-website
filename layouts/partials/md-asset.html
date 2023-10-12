@@ -1,0 +1,4 @@
+{{- with .src -}}
+{{ $md := resources.Get . | markdownify }}
+{{ printf "filename is %v" $md }}
+{{- end -}}

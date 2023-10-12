@@ -9,6 +9,8 @@ Usage
 --- description = "Some body text"
 ----------- src = "image/url.svg"
 --------- class = "ui red message"
+
+ensure all the params are passed as safeHTML so that the partial can render it
 %}}
 
 examples
@@ -17,7 +19,8 @@ examples
 
 ---------------------------------------------------------------------------- */}}
 {{- $header := .Get 0 -}}{{ with .Get "header" }}{{ $header = . }}{{- end -}}
-{{- $description := .Get 1 -}}{{ with .Get "description" }}{{ $description = . }}{{- end -}}
+{{- $description := .Get 1 -}}
+{{ with .Get "description" }}{{ $description = . }}{{- end -}}
 {{- $src := .Get 2 -}}{{ with .Get "src"}}{{ $src = . }}{{- end -}}
 {{- $class := .Get 3 | default "ui message" -}}{{ with .Get "class" }}{{ $class = . }}{{- end -}}
-{{- partial "f/message" (dict "header" $header "description" $description "src" $src "class" $class ) -}}
+{{- partial "f/message" (dict "header" ($header | safeHTML) "description" ($description  | safeHTML ) "src" $src "class" $class ) -}}
