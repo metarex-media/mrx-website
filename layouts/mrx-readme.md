@@ -10,6 +10,6 @@ right style classes.
 
 * `shortcodes/d/xxx` contain document level shortcodes e.g. `d/caption`
 * `shortcodes/f/xxx` contain fomatic wrappers e.g. `f/iumage`
-* `partials/sitelinks.html` use this for your global links e.g. `[contacts]`
+* `partials/common-markdown-links.html` use this for your global links e.g. `[contacts]`
 
 # Todo

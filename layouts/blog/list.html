@@ -33,10 +33,10 @@
 								</a></p>
 						</div>
 						<a href="{{ .RelPermalink }}" aria-label='{{ T " ui_read_more"}} - {{ .LinkTitle }}'>
-						<div class="ui primary animated compact tiny fluid button" tabindex="0">
-							<div class="visible content">{{ T "ui_read_more"}}</div>
-							<div class="hidden content">{{ .Title }}</div>
-						</div>
+							<div class="ui primary animated compact tiny fluid button" tabindex="0">
+								<div class="visible content">{{ T "ui_read_more"}}</div>
+								<div class="hidden content">{{ .Title }}</div>
+							</div>
 						</a>
 						<div class="extra">
 							{{ partial "taxonomy_terms_article_wrapper.html" . }}
@@ -46,17 +46,48 @@
 				<p class="pt-0 mt-0"></p>
 
 			</div>
-			{{ end }}{{/* --- range .Pages ------------------------------------ */}}
+			{{ end }}{{/* --- range .Pages -------------------------------------- */}}
 			{{ end }}{{/* --- if .Pages ----------------------------------------- */}}
 		</div>
 	</div>
 	{{ end }}
+	{{ if .Pages }}{{/* --- next / prev page controls ------------------- */}}
 	<div class="row">
-		<div class="col">
-			{{ if .Pages }}
-			{{ template "_internal/pagination.html" . }}
-			{{ end }}
+		<div class="ui centered four column grid">
+			<div class=" row">
+				{{ $paginator := .Paginate (( $.Scratch.Get "blog-pages").GroupByDate "2006" )}}
+				<div class="column">
+					{{ with $paginator.First}}
+					<a href="{{.URL}}">
+						<span class="ui left pointing orange label">First</span>
+					</a>
+					{{end}}
+				</div>
+				<div class="centered column">
+					{{ with $paginator.Prev}}
+					<a href="{{.URL}}">
+						<span class="ui left pointing orange basic label">Prev</span>
+						</a>
+					{{end}}
+				</div>
+				<div class="column">
+					{{ with $paginator.Next}}
+					<a href="{{.URL}}">
+						<span class="ui right pointing orange basic label">Next</span>
+					</a>
+					{{end}}
+				</div>
+				<div class="centered column">
+					{{ with $paginator.Last}}
+					<a href="{{.URL}}">
+						<span class="ui right pointing orange label">Last</span>
+					</a>
+					{{end}}
+				</div>
+			</div>
 		</div>
 	</div>
+</div>
+{{end}}
 </div>
 {{ end }}

@@ -1,20 +1,20 @@
 ---
 title:     Metarex
 linkTitle: Metarex
-
 ---
+<!-- markdownlint-disable MD038 -->
 <!-- ###  Row boundary ##################################################### -->
-{{< f/row                                                                    >}}
+{{< f/row >}}
 {{< f/cards class = "ui two stackable cards"                            >}}
 
 <!-- --- card -------------------------------------------------------------  -->
 {{< f/card-video
-      src         =  "https://metarex.media/rnf/sources/rnf-sizzle.mp4"
-      poster      =  "/img/event/ibc2023-poster-rnf-sizzle.png"
-      header      =  "IBC Accelerator 2023 - Responsive Narrative Factory"
-      extra       =  "IBC Hall 3 Friday at 14:00"
-      id          =  "splash"
-      class       = "ui olive card"
+      src       = "<https://metarex.media/rnf/sources/rnf-sizzle.mp4>"
+      poster    = "/img/event/ibc2023-poster-rnf-sizzle.png"
+      header    = "IBC Accelerator 2023 - Responsive Narrative Factory"
+      extra     = "IBC Hall 3 Friday at 14:00"
+      id        = "splash"
+      class     = "ui olive card"
       autoplay  = true
       controls  = true
  >}}
@@ -27,7 +27,7 @@ our partners.
    header=`
   <a href="https://www.bbc.co.uk/programmes/p0f8xhj4" target="_blank">BBC</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="/"                                                        >MetaRex</a>
+  <a href="/"                                                      >MetaRex</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="https://www.infuse.video/"                 target="_blank">Infuse</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -87,7 +87,7 @@ our partners.
 {{% f/message
          class="ui green message"
    description=`<p>
-    <a href="/docs/specifications/"><strong>Read the spces</strong></a> or
+    <a href="/docs/specifications/"><strong>Read the specs</strong></a> or
     <a href="/downloads/"><strong>Download samples</strong></a> of Rexy, our mascot.
   </p>
   <p>

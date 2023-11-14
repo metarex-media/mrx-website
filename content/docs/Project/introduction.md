@@ -64,4 +64,4 @@ Why not [arrange a meeting] and see how we can help?
 
 You can [download a PDF](/downloads/introduction-to-metarex.pdf) of this document
 
-{{% sitelinks %}}
+{{% common-markdown-links %}}

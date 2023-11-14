@@ -3,7 +3,7 @@ title:       MXF-LIVE at ARRI International Broadcast Day 2019
 linkTitle:   2019-07-20 ARRI day
 date:        2019-07-20
 description: The ARRI International Broadcast Day in 2019
-author:      Bruce Devlin ([@mrmxf](https://twitter.com/mrmxf))
+author:      Bruce Devlin (@[mrmxf](https://mrmxf.com))
 tags:        ["mxf", "project", "ARRI", "Mr MXF", "Trackmen", "Nablet"]
 
 resources:
@@ -18,7 +18,8 @@ resources:
 
 ---
 
-MXF-Live was demonstrated at the [ARRI International Broadcast Day 2019](https://www.arri.com/en/solutions/broadcast/broadcast-day-2019).
+MXF-Live was demonstrated at the [ARRI International Broadcast Day
+2019](https://www.arri.com/en/solutions/broadcast/broadcast-day-2019).
 
 ## Live Metadata Capture and Rendering in MXF
 
@@ -37,26 +38,33 @@ Ideal for semi-custom metadata such as position,  logging, device parameters
 
 ### What is it?
 
-An existing open standard for transporting containers of synchronous metadata over
-IP networks for use in both live and file environments.
+An existing open standard for transporting containers of synchronous metadata
+over IP networks for use in both live and file environments.
 
-An [Arri] Camera and Head sent MXF containers over IP. These were multiplexed with
-Metadata from the [Trackmen] system that gather pan, tilt, yaw, zoom, position,
-and lens metadata. [Nablet] software managed MXF multiplexing and demultiplexing
-as well as serialising the MXF from the network into a file that could be
-opened in Avid.
+An [Arri] Camera and Head sent MXF containers over IP. These were multiplexed
+with Metadata from the [Trackmen] system that gather pan, tilt, yaw, zoom,
+position, and lens metadata. [Nablet] software managed MXF multiplexing and
+demultiplexing as well as serialising the MXF from the network into a file that
+could be opened in Avid.
 
 <a id="why" ></a>
 
 ### Why?
 
-Many productions have rich metadata such as lens information, gimble telemetry, camera position information, shot logging and other bulky metadata that is created. The workflows to get it into the show are often ad-hoc. This project uses open standards to preserve metadata in a way that minimises re-wrap and re-engineering the data.
+Many productions have rich metadata such as lens information, gimble telemetry,
+camera position information, shot logging and other bulky metadata that is
+created. The workflows to get it into the show are often ad-hoc. This project
+uses open standards to preserve metadata in a way that minimises re-wrap and
+re-engineering the data.
 
 <a id="who" ></a>
 
 ### Who?
 
-Led by **[Arri]**, the team included **[Nablet]**, **[Trackmen]**, **[Fusionmedia]** and **[Mr MXF]** as coordinator. What's Next? The system works and we're looking for partners to develop a framwework for handling any kind of metadata. See the [metarex] website for details
+Led by **[Arri]**, the team included **[Nablet]**, **[Trackmen]**,
+**[Fusionmedia]** and **[Mr MXF]** as coordinator. What's Next? The system
+works and we're looking for partners to develop a framwework for handling any
+kind of metadata. See the [metarex] website for details
 
 ### Contact
 
@@ -102,7 +110,7 @@ Use the [contact] form to ask questions and suggestions.
 
 {{< f/image-fluid  "international-broadcast-day-2019-demo.jpg" "MXF Live Demo" "showCaption" >}}
 
-# Partners
+## Partners
 
 <a id="nablet"></a>
 <div class="ui horizontal fluid card">
@@ -211,11 +219,10 @@ Use the [contact] form to ask questions and suggestions.
 * <i class="file word icon"></i>[Original specificatino as DOCX](/downloads/mxf-live/metastream-specification(github).docx)
 * <i class="file pdf outline icon"></i>[Original flyer](/downloads/mxf-live/mxf-live-ibc-flyer-2019.pdf)
 
-[metarex]:      https://metarex.media
 [arri]:         #arri
 [nablet]:       #nablet
 [mr mxf]:       #mrmxf
 [trackmen]:     #trackmen
 [fusionmedia]:  mailto:kevin@fusionmedia.uk.com
 
-{{% sitelinks %}}
+{{% common-markdown-links %}}

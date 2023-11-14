@@ -36,7 +36,7 @@ and AI powered animation. MetaRex has been an opportunity to explore how new
 ways of working can be integrated into the pipeline, making more room for the
 collaboration of our disciplines.
 
-{{< sitelinks >}}
+{{< common-markdown-links >}}
 {{< /card/media >}}
 
 <!-- ####################################################################### -->
@@ -57,7 +57,7 @@ adjust her shape to perfection using 3D software. As we’ve continued to develo
 our workflow, we’ve also been using VR to model the initial shapes of 3D assets.
 Rex is still a very young dinosaur, so expect to see some character development!
 
-{{< sitelinks >}}
+{{< common-markdown-links >}}
 {{< /card/media >}}
 
 {{< card/media
@@ -83,7 +83,7 @@ create a complex and interesting scene that feels playful, familiar, and gives a
 nod to the performing arts. We have married this simple approach with dynamic
 elements such as caustics and volumetric fog for more visual interest.
 
-{{< sitelinks >}}
+{{< common-markdown-links >}}
 {{< /card/media >}}
 
 {{< card/media
