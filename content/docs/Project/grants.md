@@ -6,8 +6,7 @@ date:        2022-11-23
 description: How the grants work?
 ---
 
-{{% pageinfo %}}
-TBC - we are taking advice on the initial grant framework.
-{{% /pageinfo %}}
+
+{{% banner-doc `We are raising funds - we hope to call for grants in 2024.` %}}
 
 Grants will be available when we have sufficient funds. Fund raising continues.

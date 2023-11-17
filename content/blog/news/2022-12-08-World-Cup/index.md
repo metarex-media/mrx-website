@@ -9,7 +9,7 @@ tags:        ["project",  "football", "yellowbasket"]
 
 {{< block-image
     alt=      "Katya"
-    position= "left" 
+    position= "left"
     size=     "tiny"
     imageUrl= "featured-katya.jpg"
 >}}
@@ -34,7 +34,7 @@ streamlining operations and setup.
 
 {{< block-image
     alt=      "football setup"
-    position= "right" 
+    position= "right"
     size=     "large"
     imageUrl= "football-rigging.png"
 >}}
@@ -56,10 +56,10 @@ in and around the stadium. (By Sports Video Group material)
 
 At the core of live content distribution are the multi-feeds allowing FIFA to
 provide a wide range of match, pre- and post-match, and other content to
-rightsholders. Multilateral feeds and selected isolated cameras will also be
+rights holders. Multilateral feeds and selected isolated cameras will also be
 available in different formats, including 12G-SDI UHD/HDR BT.2020 at 2160p/50
 for selected isolated cameras and the Extended Stadium Feed. All multi-feeds
-will be available to rightsholders in 3G SDI-HDR (BT.2020), 3G-SDI SDI
+will be available to rights holders in 3G SDI-HDR (BT.2020), 3G-SDI SDI
 (REC.709), and HD-SDI SDI (REC.709). Each one will have up to 16 embedded audio
 channels.
 
@@ -81,22 +81,22 @@ The lineup of feeds:
 
 One of the features of this year broadcasting setup has been the cloud-based
 media server, FIFA MAX (Media Asset Exchange), which allows rights holders to
-seard for _and find_ find a treasure trove of content. The 2022 version will be
-capable of holding 6,000 hours of content, all of which can be accessed via the
-FIFA Content Interface. Best of all, rightsholders can access it whether or not
-they are based at the IBC, giving production professionals thousands of miles
-away a chance to boost content creation and output. Content will be stored via
-XAVC-I at 1080p/50, and the server also supports ingest and delivery in HDR
-(with SDR preview). If only we knew and could measure what portion of the live,
-time based metadata associated with the media found its way to the cloud based
-storage.  A {{% metarex %}} fire-hose of metadata might have enriched the quality,
-quantity and **searchability** of assets.
+search for _and find_ find a treasure trove of content. The 2022 version will
+be capable of holding 6,000 hours of content, all of which can be accessed via
+the FIFA Content Interface. Best of all, rights holders can access it whether
+or not they are based at the IBC, giving production professionals thousands of
+miles away a chance to boost content creation and output. Content will be
+stored via XAVC-I at 1080p/50, and the server also supports ingest and delivery
+in HDR (with SDR preview). If only we knew and could measure what portion of
+the live, time based metadata associated with the media found its way to the
+cloud based storage.  A {{% metarex %}} fire-hose of metadata might have
+enriched the quality, quantity and **searchability** of assets.
 
 <!-- ####################################################################### -->
 
 {{< block-image
     alt=      "football setup"
-    position= "right" 
+    position= "right"
     size=     "full"
     imageUrl= "feeds.png"
 />}}
@@ -109,16 +109,14 @@ additional three-dimensional microphone arrays located closer to the spectators.
 
 {{< block-image
     alt=      "football spectators"
-    position= "right" 
+    position= "right"
     size=     "full"
     imageUrl= "mobile-viewer.jpg"
 />}}
 
 {{< block-image
     alt=      "football spectators Morocco-Portugal match taken on Madeira island"
-    position= "right" 
+    position= "right"
     size=     "full"
     imageUrl= "portugal-watchers.jpg"
 />}}
- 
- [backers]: /docs/project/backers/

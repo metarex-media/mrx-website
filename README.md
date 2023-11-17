@@ -31,6 +31,7 @@ device 😃.
 
 Build the docker file and push it to your favorite image registry. On the host
 use this style of execution:
+
 ```sh
 # pull the docker image
 
@@ -40,3 +41,9 @@ docker run -d -p 10000:80 mrx-static
 # check it's working
 curl localhost:10000
 ```
+
+## The videos and downloads don't show
+
+Due to the massive size of some of the content referenced on the site the
+NGINX front end is configured to dynamically mount the folders listed in the
+folder `assets/deploy/mounts.yaml`.

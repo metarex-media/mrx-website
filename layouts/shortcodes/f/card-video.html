@@ -21,14 +21,15 @@ class: ui raised card
   - controls = = true | false
 
   */}}
-
-  <div class="ui {{ .Get "class" }} card">
+  {{- $class := .Get "class" -}}{{/* ------------------------------------- */}}
+  {{- $poster := .Get "poster" -}}{{/* ----------------------------------- */}}
+  {{- $src := .Get "src" -}}{{/* ----------------------------------------- */}}
+  <div class="ui {{ $class }} card">
     <div style="width:100%;align-content:center;background-color:darkgray;">
-      <video class="ui centered image" poster="{{ .Get "poster" }}" autoplay="1" loop="1" controls="1" muted="1"
-      style="  position: relative;top: 50%;transform: translateY(-50%);"
-      >
-        <source src="{{ .Get "src" }}"  />
-        Your browser does not support the video tag.
+      <video class="ui centered image" poster="{{ $poster }}" autoplay="1" loop="1" controls="1" muted="1"
+        style="  position: relative;top: 50%;transform: translateY(-50%);">
+        <source src="{{ $src }}" />
+        Your browser does not support the video tag with source {{$src}}.
       </video>
     </div>
     <div class="content">
@@ -36,10 +37,10 @@ class: ui raised card
         {{- .Get "header" | markdownify -}}
       </div>
       <div class="meta">
-        {{- .Get "meta" | markdownify -}}{{/* --------------------------- */}}
+        {{- .Get "meta" | markdownify -}}{{/* ---------------------------- */}}
       </div>
       <p>
-        {{- .Get "description" -}}{{- .Inner | markdownify -}}{{/* -------- */}}
+        {{- .Get "description" -}}{{- .Inner | markdownify -}}{{/* ------- */}}
       </p>
     </div>
   </div>

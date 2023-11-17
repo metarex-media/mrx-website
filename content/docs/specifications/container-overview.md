@@ -5,13 +5,7 @@ weight:      30
 description: How does metarex.media work under the hood?
 ---
 
-{{% pageinfo %}}
-
-Wrap all metadata in a standardized container with a standardized identifier and
-a standardized timing model then link it all to a register that reveals a
-manifest of the container contents.
-
-{{% /pageinfo %}}
+{{% banner-doc `Metadata in a box with a barcode - Simple!` %}}
 
 ### Core principals
 

@@ -1,0 +1,7 @@
+# list of mount points for the online server to prevent checking gigabytes of
+# video into the Git Repo
+- mount:
+  - folder: /rnf
+    annotation: bulky resources for Responsive Narrative Factory
+  - folder: /downloads
+    annotation: bulky content for user downloads

@@ -9,7 +9,7 @@ linkTitle: Metarex
 
 <!-- --- card -------------------------------------------------------------  -->
 {{< f/card-video
-      src       = "<https://metarex.media/rnf/sources/rnf-sizzle.mp4>"
+      src       = "/rnf/sources/rnf-sizzle.mp4"
       poster    = "/img/event/ibc2023-poster-rnf-sizzle.png"
       header    = "IBC Accelerator 2023 - Responsive Narrative Factory"
       extra     = "IBC Hall 3 Friday at 14:00"
@@ -71,7 +71,7 @@ our partners.
  >}}
 
 [Backers](/docs/project/backers) put money in a pot. The pot funds the
-**[FOSS](https://github.com/metarex.media)**.
+**[FOSS](https://github.com/metarex-media)**.
 
 {{% f/message
     class="ui red message"

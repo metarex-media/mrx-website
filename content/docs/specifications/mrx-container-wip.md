@@ -12,6 +12,7 @@ notes: >
   approve a set of changes for release.
 
 ---
+{{% banner-doc `This is work in progress, comments welcome` %}}`
 <!-- markdownlint-disable MD025 -->
 
 # <mark>SPECIFICATION</mark>

@@ -37,7 +37,7 @@ resources:
 - name: mrxf-rexy-sunbathing
   title: Rexy Sunbathing Metarex Sidecar
   # this file is uploaded directly to the host and is not in GitHub
-  src: /downloads/samples/rexy_sunbathe_mrx.zip
+  src: /downloads/rexy_sunbathe_mrx.zip
   params:
     icon: file zip
     download: true
@@ -47,7 +47,7 @@ resources:
 - name: mp4-rexy-sunbathing
   title: Rexy Sunbathing Video
   # this file is uploaded directly to the host and is not in GitHub
-  src: /downloads/samples/rexy_sunbathe.mp4
+  src: /downloads/rexy_sunbathe.mp4
   params:
     icon: video
     download: true
