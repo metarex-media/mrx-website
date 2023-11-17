@@ -34,7 +34,7 @@ resources:
     description: An introduction to send to you colleagues.
     group: Project Documents
 # ------------------------------------------------------------------------------
-- name: mrxf-rexy-sunbathing
+- name: mrmxf-rexy-sunbathing
   title: Rexy Sunbathing Metarex Sidecar
   # this file is uploaded directly to the host and is not in GitHub
   src: /downloads/rexy_sunbathe_mrx.zip
