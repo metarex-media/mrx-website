@@ -1,9 +1,6 @@
-name: Build and deploy to docker hub
+name: Build website & push to docker hub
 
-on:
-  push:
-    branches:
-      - "mrx-staging"
+on: push
 
 # Default to bash
 defaults:
@@ -62,18 +59,18 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-  Release_Builds:
-    runs-on: [self-hosted, Linux] #for when there's a bash script making the changes
-    env:
-      GH_TOKEN: ${{ secrets.PAT }}
-    steps:
-      ## include to use the latest version
-      - uses: actions/checkout@v3
-      - run: echo "I have run on tagged release"
-      - run: echo "my tag is ${{ env.RELEASE_VERSION }}"
-      # These get the tag from the .git file rather than passing through the value
-      # build the release binaries
-      - run: chmod u+x ./clogrc/go-build.sh && ./clogrc/go-build.sh ${{ secrets.PAT }}
-      - run: chmod u+x ./clogrc/release.sh
-      # upload the generated binaries
-      - run: ./clogrc/release.sh ${{ env.RELEASE_VERSION }}
+  # Release_Builds:
+  #   runs-on: [self-hosted, Linux] #for when there's a bash script making the changes
+  #   env:
+  #     GH_TOKEN: ${{ secrets.PAT }}
+  #   steps:
+  #     ## include to use the latest version
+  #     - uses: actions/checkout@v3
+  #     - run: echo "I have run on tagged release"
+  #     - run: echo "my tag is ${{ env.RELEASE_VERSION }}"
+  #     # These get the tag from the .git file rather than passing through the value
+  #     # build the release binaries
+  #     - run: chmod u+x ./clogrc/go-build.sh && ./clogrc/go-build.sh ${{ secrets.PAT }}
+  #     - run: chmod u+x ./clogrc/release.sh
+  #     # upload the generated binaries
+  #     - run: ./clogrc/release.sh ${{ env.RELEASE_VERSION }}
