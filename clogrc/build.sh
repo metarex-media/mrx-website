@@ -29,7 +29,7 @@ echo "hugo returned $?"
 [[ $? > 0 ]] && fnError "hugo build failed" && exit 1
 
 fInfo "$cC docker build $cF$CONTAINER:$cE$TAG$cX"
-docker build -t "$CONTAINER:$TAG" .
+docker build -t "$CONTAINER:$TAG"  --platform  linux/arm64  .
 
 [[ $? > 0 ]] && docker images | grep "$GREP_SEARCH" &&\
    fnError "Build failed -$cE only$cT the images above exist"\
