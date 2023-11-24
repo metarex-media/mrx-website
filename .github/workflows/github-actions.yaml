@@ -31,7 +31,7 @@ jobs:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        run: bash clogrc/build.sh
+        run: bash ./clogrc/build.sh
 
   push_to_registry:
     name: Push Docker image to Docker Hub
