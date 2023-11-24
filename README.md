@@ -14,11 +14,21 @@ downloads are hosted only on the website as they are too big for GitHub.
 
 ## Forking, cloning & editing
 
-Once you've (cloned or forked & cloned) the repo, you need to install both
-[golang] and [hugo] in your development environment. My preference was to use
+Once you've (cloned or forked & cloned) the repo, you need to install
+[golang] [node] and [hugo] in your development environment. My preference was to use
 [gitpod] which runs VS Code in your browser (on a phone on a train) as the dev
 environment to ensure I could update the site from anywhere, anytime on any
 device 😃.
+
+To develop the site, execute the following:
+
+```bash
+# install node packages with yarn
+cd themes/fohuw
+yarn
+cd ../..
+yarn
+```
 
 [Docsy]:             https://github.com/google/docsy
 [fomantic ui]:       https://fomantic-ui.com/
@@ -26,6 +36,7 @@ device 😃.
 [golang]:            https://go.dev/doc/install
 [Hugo]:              https://gohugo.io/installation/
 [Hugo theme module]: https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
+[node]:              https://nodejs.org/en/download
 
 ## deploying
 
