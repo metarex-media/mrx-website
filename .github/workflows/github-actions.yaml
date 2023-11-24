@@ -4,7 +4,7 @@ on:
   # Runs on pushes targeting the named branch
   push:
     branches:
-      - mrx-staging
+      - main
 
 # Default to bash
 defaults:
@@ -14,7 +14,7 @@ defaults:
 jobs:
 
   staging-build:
-    runs-on: [self-hosted, ubuntu-latest]
+    runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.120.2
     steps:
@@ -40,7 +40,7 @@ jobs:
 
   push_to_registry:
     name: Push Docker image to Docker Hub
-    runs-on:  [self-hosted, ubuntu-latest]
+    runs-on:  ubuntu-latest
     needs: staging-build
     steps:
 
