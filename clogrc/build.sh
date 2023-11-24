@@ -13,6 +13,9 @@ fInfo "purging old builds:  $ $cC$CMD$cX"
 $CMD
 
 TAG=$(git tag | tail -1)
+REMOTETAGS=$(git ls-remote --tags origin | egrep -o "v[0-9]+\.[0-9]+\.[0-9]+" | head -1)
+REMOTE=$(git ls-remote --tags origin | egrep -o "$TAG" | head -1)
+
 if [ -z "$TAG" ] ; then
   fWarning "No recent tag found using tag$cE dev"
   TAG=dev
@@ -31,6 +34,12 @@ docker build -t "$CONTAINER:$TAG" .
 [[ $? > 0 ]] && docker images | grep "$GREP_SEARCH" &&\
    fnError "Build failed -$cE only$cT the images above exist"\
    exit 1
+
+if [[ "$TAG" != "$REMOTE"  ]] ; then
+git push origin v1.3.1
+  printf "${cE}ERROR$cT Git local tag ($cF$TAG$cT) != Remote tag ($cF$REMOTE$cT)\n"
+  printf "Recommend$cC git push origin $TAG\n"
+fi
 
 fInfo "Test: docker run -d -p 11999:80 $cF$CONTAINER:$cE$TAG$cX"
 fInfo "Next: docker push $cF$CONTAINER:$cE$TAG$cX"
