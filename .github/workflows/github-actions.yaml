@@ -1,6 +1,8 @@
 name: Build website & push to docker hub
 
-on: push
+on:
+  push:
+  workflow_dispatch:
 
 # Default to bash
 defaults:
