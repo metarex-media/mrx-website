@@ -7,9 +7,5 @@ menu:
     weight: 100
 ---
 
-{{% pageinfo %}}
-The documentation is split into Project, Technology, Grants & Applications section.
-{{% /pageinfo %}}
-
-
-
+{{% banner-doc `The documentation is split into Project, Technology,
+ Grants & Applications section.` %}}

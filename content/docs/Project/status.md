@@ -7,9 +7,8 @@ description: Current Status.
 tags: ["status"]
 ---
 
-{{% pageinfo %}}
-The {{% metarex %}} Project is under way and we're about to start work packages.
-{{% /pageinfo %}}
+{{% banner-doc `IBC is done - we're preparing for NAB 2024.`  %}}
+
 
 {{% metarex %}} is looking for more [backers] to create a financial reserve from
 which we can give out grants to engineering teams to create the Open Source that

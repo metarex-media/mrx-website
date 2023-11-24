@@ -1,16 +1,15 @@
 ---
 title:       "Backers - making it happen"
 linkTitle:   "Backers - making it happen"
+date:        2023-11-17
 weight:      900
 description: How the Project is Funded.
 categories: ["Backer"]
 tags: ["backer"]
 ---
 
-{{% pageinfo %}} see the blog post about the
-[MXF-LIVE](/blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/)
-technology demo.
-{{% /pageinfo %}}
+{{% banner-doc  `MetaRex give away Free Open Source Software for easy
+implementation of the MetaRex framework.` %}}
 
 The project is being funded by backers who want to see a body of Open Source
 code appear in the industry. Backers may be product vendors, integrators,

@@ -6,8 +6,9 @@ description: What software can you expect from Metarex.
 categories: ["Backer"]
 tags: ["backer"]
 ---
-Our goal is to give away Free Open Source Software to allow easy implementation
-of the {{% metarex %}} framework.
+
+{{% banner-doc `MetaRex will give away Free Open Source Software for easy
+implementation of the MetaRex framework.` %}}
 
 ## Framework code
 

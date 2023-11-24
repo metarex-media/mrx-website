@@ -6,9 +6,7 @@ date:        2022-11-22
 description: Tutorials coming soon.
 ---
 
-{{% pageinfo %}}
-How does metarex work & why is it needed?
-{{% /pageinfo %}}
+{{% banner-doc `How does metarex work & why is it needed?` %}}
 
 {{< blocks/section color="white" >}}
   {{% block-feature icon="fa-file-code"     title="Technology"  url="docs/technology"          %}}{{< vimeo 755662848 >}}{{% /block-feature %}}

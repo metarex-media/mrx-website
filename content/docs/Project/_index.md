@@ -56,16 +56,16 @@ lose metadata when content is processed by third parties.
 * **What is it good for?** Carrying binary, text, isochronous and event driven
   metadata. Identifying the metadata via a registry and providing links to
   applications and schemas that can shed light on how to process that metadata.
-  By harmonising the identification and transport of the metadata, an
+  By harmonizing the identification and transport of the metadata, an
   infrastructure can be built to keep the stuff that we currently lose.
 
 * **What is it not good for?** We will not harmonize schemas for tripod data,
   lens data, QC data or any other sort of metadata carried. That's outside the
   scope. {{% metarex %}} will carry any metadata through the value chain to
   where it's needed. {{% metarex %}} will identify that metadata and allow
-  applications to enlighten the metadata or rmove it based on business rules.
+  applications to enlighten the metadata or remove it based on business rules.
 
-* **What is it *not yet* good for?**: At the end of 2022 {{% metarex %}} is just
+* **What is it _not yet_ good for?**: At the end of 2022 {{% metarex %}} is just
   a paper specification, some pictures and a prototype register. At the end of
   2023 we should have code for different computer languages and a framework for
   common tools and apps. By the end of 2024 we should have end to end workflows
@@ -90,7 +90,7 @@ a first class citizen. The biggest issue was "_The metadata gets lost_".
 {{% metarex %}} was shown to work back in 1998, when the original MXF team demonstrated
 file workflows with [metadata preservation] at the BBC in a project called
 [G-FORS] (see page 219 of linked PDF). The demo was brought up to date with live
-netowrking and VFX and shown at the [ARRI Broadcast Day] in 2019, but in 2022
+networking and VFX and shown at the [ARRI Broadcast Day] in 2019, but in 2022
 there still wasn't a similar solution available on the market. Games companies
 complained that every new virtual set was a custom engineering job, just to get
 the metadata to the right place at the right time.
@@ -110,11 +110,7 @@ ecosystem is of interest to you or your company.
 The project will end in Q1 2025 with the project board deciding on the details
 of the project closure.
 
-
-
-
 [DPP]:         /blog/2022/11/16/2022-11-16-dpp-leaders-briefing/
 [IBC]:         /blog/2022/09/18/ibc-show-2022/
 [NAB]:         /blog/2022/04/23/metarex-at-nab-2022-in-las-vegas/
-[status]:      /docs/project/status/
 [backers]:    /docs/project/backers/

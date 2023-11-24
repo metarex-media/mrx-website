@@ -27,7 +27,7 @@
 
 <div style="display:inline-block;text-align:center;padding:1em;margin:auto;">
   {{ if .Get "url" }}<a href='{{ .Get "url" }}' target='_blank'>{{ end }}
-  <img src="{{ $fileUrl }}"       style="height:{{ $HH }}px;width:{{ $WW }}px;object-fit:contain;" />
+  <img src="{{ $fileUrl }}"       style="height:{{ $HH }}px;width:{{ $WW }}px;object-fit:contain;" >
   <p style="font-size:70%;">{{ $title }}</p>
   {{ if .Get "url"  }}</a>{{ end }}
 </div>

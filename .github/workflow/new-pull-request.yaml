@@ -1,0 +1,58 @@
+# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
+name: New Pull Request
+
+# Leave ENVs up here so they can be accessed by every Job
+env :
+  env_var: ${{ vars.ENV_CONTEXT_VAR }}
+  PAT: ${{ secrets.PAT }}
+  MSG: ${{ github.event.head_commit.message }}
+  TAG: ${{ github.event.release.tag_name }}
+
+# on:
+#   pull_request:
+#     branches: [main]
+#     # types: [opened]
+jobs:
+  Checking_Env:
+    runs-on: [self-hosted] #for when there's a bash script making the changes
+    steps:
+    - run: echo "I have run on a pull request"
+   # - uses: actions/checkout@v3
+    - name: push to a different repo
+      uses: actions/checkout@v4
+    - run: echo "echo REPO_NAME=${{ github.event.pull_request.head.repo.name }}, REPO_NAME=${{ github.event.repository.name }}, REPO_NAME=${{ github.event.pull_request.head.repo }},"
+    - run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/} , REPO_full_NAME=${{ github.event.pull_request.head.repo.full_name }}"
+    - run: echo "I need to check my pull requests here"
+    - run: echo "my tag is $TAG"
+    - run: echo "Head_Ref:$env:GITHUB_HEAD_REF , Ref:$env:GITHUB_REF, ActionPath:$env:GITHUB_ACTION_PATH"
+    - run: echo "ActionRepo:$env:GITHUB_ACTION_REPOSITORY, JOB:$env:GITHUB_JOB, REFNAME:$env:GITHUB_REF_NAME"
+    - run: echo "URL?:$env:GITHUB_SERVER_URL, workpace:$env:GITHUB_WORKSPACE"
+    - run : echo "testing these enviroment varaibles ${{ github.ref }} , ${{ github.base.ref }}"
+    - run: ./script.sh
+
+  buildtest:
+    runs-on: [self-hosted, Linux]
+    needs: Checking_Env
+    steps:
+    - name: Build
+      uses: actions/checkout@v3
+      #with:
+      #  go-version: '1.21'
+    - run: ls
+    - run: ls ./clogrc/
+    - run: chmod u+x clogrc/goReplace.sh
+    - run: ./clogrc/goReplace.sh . ${{ github.event.pull_request.head.repo.full_name }} ${{ github.actor }}/${{ github.event.repository.name }}
+    - run: ./clogrc/goReplace.sh . ${{ github.event.pull_request.head.repo.full_name }} ${{ github.actor }}/${{ github.event.repository.name }}
+    - run: echo "your repository is ${{ github.repository }}."
+    - run: echo "origin from $GITHUB_BASE_REF"
+    - run: go install golang.org/x/tools/gopls@latest
+    - run: go build
+    - run: ./runner
+
+
+
+
+    #- run: chmod u+x ./clogrc/privatepublic.sh
+    #- run: sudo ./gitupdate.sh "$PAT" "$MSG"
