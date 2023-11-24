@@ -3,6 +3,9 @@
 
 name: New Pull Request
 
+on:
+  pull_request:
+
 # Leave ENVs up here so they can be accessed by every Job
 env :
   env_var: ${{ vars.ENV_CONTEXT_VAR }}
