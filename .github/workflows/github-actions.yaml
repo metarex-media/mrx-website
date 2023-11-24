@@ -2,7 +2,8 @@ name: Build and deploy to docker hub
 
 on:
   push:
-    branches: [ "mrx-staging" ]
+    branches:
+      - 'mrx-staging'
 
 # Default to bash
 defaults:
