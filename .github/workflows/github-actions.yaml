@@ -1,10 +1,6 @@
 name: Build and deploy to docker hub
 
-on:
-  # Runs on pushes targeting the named branch
-  push:
-    branches:
-      - main
+on: push
 
 # Default to bash
 defaults:
@@ -13,7 +9,7 @@ defaults:
 
 jobs:
 
-  staging-build:
+  build-with-clog:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.120.2
