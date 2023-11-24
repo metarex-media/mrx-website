@@ -28,6 +28,8 @@ cd themes/fohuw
 yarn
 cd ../..
 yarn
+git submodule init
+git submodule update
 ```
 
 [Docsy]:             https://github.com/google/docsy
