@@ -12,7 +12,7 @@ CMD="rm -fr public/*"
 fInfo "purging old builds:  $ $cC$CMD$cX"
 $CMD
 
-TAG=$(git describe)
+TAG=$(git tag | tail -1)
 if [ -z "$TAG" ] ; then
   fWarning "No recent tag cannot push image$cX"
   exit 1
