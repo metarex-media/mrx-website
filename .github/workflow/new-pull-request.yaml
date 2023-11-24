@@ -10,10 +10,10 @@ env :
   MSG: ${{ github.event.head_commit.message }}
   TAG: ${{ github.event.release.tag_name }}
 
-on:
-  pull_request:
-    branches: [main]
-    # types: [opened]
+# on:
+#   pull_request:
+#     branches: [main]
+#     # types: [opened]
 jobs:
   Checking_Env:
     runs-on: [self-hosted] #for when there's a bash script making the changes

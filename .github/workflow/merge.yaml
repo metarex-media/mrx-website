@@ -3,10 +3,10 @@ name: Merge Updates
 run-name: Removing traces of the pull request repo from the merge
 
 # only when pull requests are closed
-on:
-  pull_request:
-    types:
-      - closed
+# on:
+#   pull_request:
+#     types:
+#       - closed
 
 jobs:
   update_gomod: # only run once the repo has been merged
